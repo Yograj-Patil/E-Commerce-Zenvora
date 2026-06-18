@@ -8,12 +8,15 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({
-    origin: "*",
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://e-commerce-zenvora-git-main-yograj-patils-projects.vercel.app",
+    ],
     credentials: true,
   })
 );
-app.use(express.json());
 
 // app.use("/api/auth", authRoutes);   
 app.use("/api/auth", authRouter);   

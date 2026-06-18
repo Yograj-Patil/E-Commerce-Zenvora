@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://zenvora-backend.onrender.com/api",
+  baseURL: "https://e-commerce-zenvora.onrender.com/api",
 });
 
 export default API;
