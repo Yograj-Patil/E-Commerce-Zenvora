@@ -42,7 +42,7 @@ const Register = () => {
             console.log(error);
 
             alert(
-                error.response?.data?.message ||
+                error.response?.data?.message || error.message ||
                 "Registration failed"
             );
         }
